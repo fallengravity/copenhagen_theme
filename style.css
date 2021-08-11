@@ -1115,10 +1115,11 @@ ul {
 
 .blocks-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 @media (min-width: 768px) {
@@ -1146,7 +1147,7 @@ ul {
   min-height: 90px;
   border: 2px solid #555BFF;
   margin: 10% 5% 5% auto;
-  box-shadow: 10px 10px 0 -3px #FFF, 10px 10px #FFD913,  20px 20px 0 -3px #FFF, 20px 20px #FF9C55;
+  box-shadow: 10px 10px 0 -3px #FFF, 10px 10px #FFD913, 20px 20px 0 -3px #FFF, 20px 20px #FF9C55;
   transition: box-shadow 1s, top 1s, left 1s;
   position: relative;
   top: 0;
@@ -1275,6 +1276,7 @@ ul {
   padding: 15px 5px 20px;
   color: $text_color;
   text-align: center;
+  margin: 1%;
 }
 
 .promoted-articles-item .icon-lock {
@@ -1283,11 +1285,14 @@ ul {
 
 .promoted-articles-item:last-child a {
   border: 0;
+  border: 1px solid #ddd;
+  margin: 1%;
 }
 
 @media (min-width: 1024px) {
   .promoted-articles-item:last-child a {
     border: 1px solid #ddd;
+    margin: 1%;
   }
 }
 

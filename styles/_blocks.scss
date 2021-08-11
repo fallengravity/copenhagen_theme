@@ -1,106 +1,102 @@
 /***** Blocks *****/
+
+
 /* Used in Homepage#categories and Community#topics */
+
 .blocks {
-  margin-bottom: 1%;
-  &-list {
-    @include tablet {
-      margin: 0 -15px;
+    margin-bottom: 1%;
+    &-list {
+        @include tablet {
+            margin: 0 -15px;
+        }
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        align-content: center;
     }
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    list-style: none;
-    padding: 0;
-  }
-
-  &-item {
-    @include tablet {
-      margin: 0 15px 30px;
-    }
-
-    border: 1px solid $brand_color;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #000;
-    display: flex;
-    flex: 1 0 340px;
-    margin: 0 0 30px;
-    max-width: 100%;
-    text-align: center;
-    border: 1px solid $brand_color;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #FFF;
-    display: block;
-    width: 300px;
-    min-height: 90px;
-    border: 2px solid #555BFF;
-    margin: 10% 5% 5% auto;
-    box-shadow: 10px 10px 0 -3px #FFF, 10px 10px #FFD913, 
-        20px 20px 0 -3px #FFF, 20px 20px #FF9C55; 
-    transition: box-shadow 1s, top 1s, left 1s;
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #fdd805;
-
-      * {
+    &-item {
+        @include tablet {
+            margin: 0 15px 30px;
+        }
+        border: 1px solid $brand_color;
+        border-radius: 4px;
+        box-sizing: border-box;
         color: #000;
-        text-decoration: none;
-      }
-    }
-
-    &-internal {
-      background-color: transparent;
-      border: 1px solid $border-color;
-
-      .icon-lock {
-        height: 15px;
-        width: 15px;
-        bottom: 5px;
+        display: flex;
+        flex: 1 0 340px;
+        margin: 0 0 30px;
+        max-width: 100%;
+        text-align: center;
+        border: 1px solid $brand_color;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #FFF;
+        display: block;
+        width: 300px;
+        min-height: 90px;
+        border: 2px solid #555BFF;
+        margin: 10% 5% 5% auto;
+        box-shadow: 10px 10px 0 -3px #FFF,
+        10px 10px #FFD913,
+        20px 20px 0 -3px #FFF,
+        20px 20px #FF9C55;
+        transition: box-shadow 1s,
+        top 1s,
+        left 1s;
         position: relative;
-      }
-
-      a { color: $text_color; }
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #fdd805;
+            * {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        &-internal {
+            background-color: transparent;
+            border: 1px solid $border-color;
+            .icon-lock {
+                height: 15px;
+                width: 15px;
+                bottom: 5px;
+                position: relative;
+            }
+            a {
+                color: $text_color;
+            }
+        }
     }
-  }
-
-  &-item-link {
-    color: #000;
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: center;
-    border-radius: inherit;
-
-    &:hover,
-    &:active {
-      text-decoration: none;
+    &-item-link {
+        color: #000;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        border-radius: inherit;
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
+        &:focus {
+            @include focus-ring;
+            text-decoration: none;
+        }
     }
-    
-    &:focus {
-      @include focus-ring;
-      text-decoration: none;
+    &-item-title {
+        margin-bottom: 0;
+        font-size: 16px;
     }
-  }
-
-  &-item-title {
-    margin-bottom: 0;
-    font-size: 16px;
-  }
-
-  &-item-description {
-    margin: 0;
-  }
-
-  &-item-description:not(:empty) {
-    margin-top: 10px;
-  }
+    &-item-description {
+        margin: 0;
+    }
+    &-item-description:not(:empty) {
+        margin-top: 10px;
+    }
 }

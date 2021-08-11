@@ -44,6 +44,7 @@
             padding: 15px 5px 20px;
             color: $text_color;
             text-align: center;
+            margin: 1%;
         }
         .icon-lock {
             vertical-align: baseline;
@@ -51,8 +52,11 @@
         &:last-child a {
             @include desktop {
                 border: 1px solid $border-color;
+                margin: 1%;
             }
             border: 0;
+            border: 1px solid $border-color;
+            margin: 1%;
         }
     }
 }
