@@ -27,8 +27,8 @@
       flex: 0 0 auto;
       padding-right: 30px;
       width: 33%; /* Three columns on desktop */
-
       [dir="rtl"] & { padding: 0 0 0 30px; }
+      border-radius: 1%;
     }
 
     flex: 1 0 auto;
@@ -39,9 +39,10 @@
 
     a {
       display: block;
-      border-bottom: 1px solid $border-color;
-      padding: 15px 0;
+      border: 1px solid $border-color;
+      padding: 15px 5px 20px;
       color: $text_color;
+      text-align: center;
     }
 
     .icon-lock {
@@ -50,7 +51,7 @@
 
     &:last-child a {
       @include desktop {
-        border-bottom: 1px solid $border-color;
+        border: 1px solid $border-color;
       }
 
       border: 0;

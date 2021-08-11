@@ -1109,6 +1109,10 @@ ul {
 
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
+.blocks {
+  margin-bottom: 1%;
+}
+
 .blocks-list {
   display: flex;
   flex-wrap: wrap;
@@ -1127,7 +1131,7 @@ ul {
   border: 1px solid $brand_color;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $brand_color;
+  color: #000;
   display: flex;
   flex: 1 0 340px;
   margin: 0 0 30px;
@@ -1157,11 +1161,11 @@ ul {
 }
 
 .blocks-item:hover, .split-button button.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background-color: #fdd805;
 }
 
 .blocks-item:hover *, .split-button button.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  color: #000;
   text-decoration: none;
 }
 
@@ -1182,7 +1186,7 @@ ul {
 }
 
 .blocks-item-link {
-  color: $brand_color;
+  color: #000;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -1254,6 +1258,7 @@ ul {
     padding-right: 30px;
     width: 33%;
     /* Three columns on desktop */
+    border-radius: 1%;
   }
   [dir="rtl"] .promoted-articles-item {
     padding: 0 0 0 30px;
@@ -1266,9 +1271,10 @@ ul {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  border: 1px solid #ddd;
+  padding: 15px 5px 20px;
   color: $text_color;
+  text-align: center;
 }
 
 .promoted-articles-item .icon-lock {
@@ -1281,7 +1287,7 @@ ul {
 
 @media (min-width: 1024px) {
   .promoted-articles-item:last-child a {
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
   }
 }
 
