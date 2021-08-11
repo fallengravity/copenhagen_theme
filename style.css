@@ -1255,7 +1255,7 @@ ul {
   .promoted-articles-item {
     align-self: flex-end;
     flex: 0 0 auto;
-    padding-right: 30px;
+    padding: 1%;
     width: 33%;
     /* Three columns on desktop */
     border-radius: 1%;
