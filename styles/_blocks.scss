@@ -27,6 +27,22 @@
     margin: 0 0 30px;
     max-width: 100%;
     text-align: center;
+    border: 1px solid $brand_color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFF;
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    border: 2px solid #555BFF;
+    margin: 10% 5% 5% auto;
+    box-shadow: 10px 10px 0 -3px #FFF, 10px 10px #FFD913, 
+        20px 20px 0 -3px #FFF, 20px 20px #FF9C55; 
+    transition: box-shadow 1s, top 1s, left 1s;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 
     &:hover,
     &:focus,
